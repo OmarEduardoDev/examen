@@ -1,0 +1,401 @@
+$primaryColor: #0b2343;
+$backgroundMainColor: #007cc2;
+$smallHeight: 20px ;
+$smallFontSize: 12px;
+$mainMarginLeft: 100px;
+$disabledColor: rgba(255, 255, 255, 0.2);
+$hoverColor: #e91b2f;
+$gray: #e5e5e5;
+$buttonColor: #004990;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: $backgroundMainColor;
+}
+
+.App-header {
+  background-color: $primaryColor;
+  width: 100%;
+  height: 60px;
+  color: white;
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: $smallHeight;
+}
+
+.menuRight {
+  display: flex;
+  font-weight: bold;
+  font-size: $smallFontSize;
+  padding-top: 23px;
+  margin-left: $mainMarginLeft;
+  border-left: white;
+  border-right: 1px solid white;
+}
+
+.menu li,
+.menuRight li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 15px;
+}
+
+.logo {
+  width: 300px;
+}
+
+.logoMenu {
+  margin-left: 10px;
+}
+
+.logo__mail {
+  width: $smallHeight;
+  height: $smallHeight;
+  margin-top: $smallHeight;
+  margin-left: 10px;
+}
+
+.login {
+  font-size: $smallFontSize;
+  font-weight: bold;
+  padding-top: $smallHeight;
+  margin-left: 15px;
+}
+
+.menuIcons {
+  display: flex;
+}
+
+.logo__image {
+  width: 200px;
+  height: 56px;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.button {
+  width: 150px;
+  height: 60px;
+  background-color: $buttonColor;
+  border-radius: 40px;
+  color: white;
+  text-align: center;
+  padding-top: $smallHeight;
+  margin-top: 35px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.buttonDisabled {
+  width: 150px;
+  height: 60px;
+  border-radius: 40px;
+  border: 1px solid $disabledColor;
+  color: $disabledColor;
+  text-align: center;
+  padding-top: $smallHeight;
+  margin-top: 35px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 10px;
+  pointer-events: none;
+}
+
+.button:hover,
+.switch:hover {
+  background-color: $hoverColor;
+}
+
+.fligths {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 15% 10% 15% 10% 20% 15% 10%;
+  align-content: center;
+  color: $primaryColor;
+  border-bottom: 2px solid $gray;
+}
+
+.separatorContainer {
+  display: flex;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.circleL {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $primaryColor;
+  position: relative;
+  left: 3px;
+  top: -2px;
+}
+
+.circleR {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $primaryColor;
+  position: relative;
+  right: 3px;
+  top: -2px;
+}
+
+.line {
+  width: 80%;
+  border-top: 2px solid$primaryColor;
+}
+
+
+.title {
+  display: flex;
+  font-size: 42px;
+  color: white;
+  padding-top: 80px;
+  margin-bottom: 30px;
+  align-content: space-around;
+}
+
+.title__image {
+  height: 60px;
+  padding: 5px;
+  margin-left: $mainMarginLeft;
+  margin-right: $smallHeight;
+}
+
+.form {
+  display: flex;
+  color: white;
+  height: 120px;
+}
+
+.input {
+  width: 250px;
+  height: 60px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  border-width: 0px;
+}
+
+.date {
+  width: 200px;
+  height: 60px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  color: $gray;
+}
+
+.inputContainerDate {
+  display: flex;
+  flex-direction: column;
+  color: $gray;
+  margin-left: $smallHeight;
+}
+
+.switch {
+  width: 35px;
+  height: 35px;
+  background-color: $buttonColor;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 45px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.title__switch {
+  height: 35px;
+  padding: 5px;
+}
+
+.radioButtons {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  margin-left: $mainMarginLeft;
+  margin-right: 30px;
+  border-right: 1px solid white;
+}
+
+.radio {
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+}
+
+.radioRow {
+  display: flex;
+  padding-top: 8px;
+  margin-right: 10px;
+}
+
+.result {
+  background-color: white;
+  padding: $mainMarginLeft;
+}
+
+.noData {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.headers {
+  padding: 0px 10px $smallHeight;
+  display: grid;
+  grid-template-columns: 15% 10% 15% 10% 20% 15% 10%;
+  color: $primaryColor;
+  border-bottom: 2px solid $gray;
+}
+
+.textLarge {
+  font-size: 22px;
+}
+
+.textSmall {
+  font-size: $smallFontSize;
+}
+
+.noDataLineOne {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.noDataLineTwo {
+  font-size: 24px;
+}
+
+.destination {
+  display: flex;
+}
+
+.numberFligth {
+  display: flex;
+}
+
+@media (max-width: 1200px) {
+  .menu,
+  .menuRight,
+  .switch,
+  .headers,
+  .separatorContainer {
+    display: none;
+  }
+
+  .App-header {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+
+  .title {
+    font-size: 24px;
+    color: white;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    align-content: space-around;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .destination {
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: $mainMarginLeft;
+  }
+
+  .inputContainerDate {
+    margin-top: $smallHeight;
+    margin-left: $mainMarginLeft;
+  }
+
+  .input {
+    width: 90%;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .radioButtons {
+    flex-direction: row;
+    padding-top: 25px;
+    border-right: 0px;
+  }
+
+  .date {
+    width: 90%;
+  }
+
+  .button,
+  .buttonDisabled {
+    width: 75%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 18px;
+    margin-left: $mainMarginLeft;
+  }
+
+  .numberFligth {
+    margin-left: $mainMarginLeft;
+    margin-top: 40px;
+  }
+
+  .inputContainer {
+    width: 100%;
+  }
+
+  .result {
+    margin-top: 70%;
+    padding: 50px;
+  }
+
+  .noData {
+    margin-top: 75%;
+    height: 30vh;
+  }
+
+  .fligths {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 0px;
+    grid-template-columns: 15% 20% 15% 20% 15% 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .result {
+    padding: 40px;
+    margin-top: 90%;
+  }
+  .fligths {
+    grid-template-columns: 20% 15% 20% 15% 20% 15%;
+  }
+}
